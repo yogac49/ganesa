@@ -139,8 +139,12 @@ public class kantorpusat extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("id karyawan");
 
+        datatabel.setBackground(new java.awt.Color(204, 204, 204));
         datatabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -159,6 +163,7 @@ public class kantorpusat extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(datatabel);
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("jumlah gaji");
 
         jButton1.setText("Simpan");
@@ -175,8 +180,11 @@ public class kantorpusat extends javax.swing.JFrame {
             }
         });
 
+        status.setBackground(new java.awt.Color(204, 204, 204));
+        status.setForeground(new java.awt.Color(0, 0, 0));
         status.setText("Kerja Lembur");
 
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Nama karyawan");
 
         jButton3.setText("Hapus");
@@ -257,6 +265,9 @@ public class kantorpusat extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Data Gaji", jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
+
+        Absentabel.setBackground(new java.awt.Color(204, 204, 204));
         Absentabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -270,8 +281,10 @@ public class kantorpusat extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(Absentabel);
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("ABSENSI KARYAWAN");
 
+        datakar.setBackground(new java.awt.Color(204, 204, 204));
         datakar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -285,6 +298,7 @@ public class kantorpusat extends javax.swing.JFrame {
         ));
         jScrollPane4.setViewportView(datakar);
 
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("DATA KARYAWAN");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -322,6 +336,11 @@ public class kantorpusat extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Laporan", jPanel2);
 
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+
+        jScrollPane1.setForeground(new java.awt.Color(204, 204, 204));
+
+        tugastable.setBackground(new java.awt.Color(204, 204, 204));
         tugastable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -352,8 +371,10 @@ public class kantorpusat extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("TUGAS");
 
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("JABATAN");
 
         jButton4.setText("SIMPAN");
@@ -559,6 +580,7 @@ public class kantorpusat extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         new LOGIN().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
     private void tampildatatugas() {
         DefaultTableModel model = new DefaultTableModel();
